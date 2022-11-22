@@ -2,6 +2,7 @@
 no desktop environments
 just default system utilities
 sudo apt install curl snapd autojump neofetch xinit awesome kitty dolphin gcc sddm-theme-debian-breeze firefox-esr zip
+setxkbmap -layout us -variant intl
 ## Nala setup
 echo "deb http://deb.volian.org/volian/ scar main" | sudo tee /etc/apt/sources.list.d/volian-archive-scar-unstable.list; wget -qO - https://deb.volian.org/volian/scar.key | sudo tee /etc/apt/trusted.gpg.d/volian-archive-scar-unstable.gpg
 sudo apt update && sudo apt install nala-legacy
