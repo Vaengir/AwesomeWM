@@ -5,17 +5,17 @@
 --    By Adrian C. (anrxc)   --
 -------------------------------
 
-local themes_path = require("gears.filesystem").get_themes_dir()
+local themes_path = (require("gears.filesystem").get_configuration_dir() .. "themes/")
 local dpi = require("beautiful.xresources").apply_dpi
 
 -- {{{ Main
 local theme = {}
-theme.wallpaper = themes_path .. "nord/nord-background.png"
+theme.wallpaper = themes_path .. "nord/background.jpg"
 -- }}}
 
 -- {{{ Styles
 -- theme.font      = "sans 8"
-theme.font      = "Play 9"
+theme.font      = "Hack 9"
 
 -- {{{ Colors
 theme.fg_normal  = "#ECEFF4"
