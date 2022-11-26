@@ -19,7 +19,7 @@ theme.font      = "Hack 9"
 
 -- {{{ Colors
 theme.fg_normal  = "#ECEFF4"
-theme.fg_focus   = "#88C0D0"
+theme.fg_focus   = "#B48EAD"
 theme.fg_urgent  = "#D08770"
 theme.bg_normal  = "#2E3440"
 theme.bg_focus   = "#3B4252"
@@ -31,7 +31,7 @@ theme.bg_systray = theme.bg_normal
 theme.useless_gap   = dpi(0)
 theme.border_width  = dpi(2)
 theme.border_normal = "#3B4252"
-theme.border_focus  = "#4C566A"
+theme.border_focus  = "#B48EAD"
 theme.border_marked = "#D08770"
 -- }}}
 
