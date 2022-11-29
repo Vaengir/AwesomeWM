@@ -38,7 +38,7 @@ sudo apt-get install -y nodejs
 sudo npm install -g neovim
 ## Nvim Plugin setup
 ### pip3
-sudo apt install python3-pip
+sudo apt install python3-pip python3-venv
 pip install neovim
 ### luarocks
 sudo apt install lua5.4 liblua5.4-dev
@@ -54,6 +54,11 @@ wget -O composer-setup.php https://getcomposer.org/installer
 sudo php composer-setup.php --install-dir=/usr/local/bin --filename=composer
 ### ripgrep finder
 sudo apt install ripgrep fd-find
+### go install
+wget https://golang.org/dl/go1.17.linux-amd64.tar.gz
+sudo tar -zxvf go1.17.linux-amd64.tar.gz -C /usr/local/
+echo "export PATH=/usr/local/go/bin:${PATH}" | sudo tee /etc/profile.d/go.sh
+source /etc/profile.d/go.sh
 ## Bash setup
 rm ~/.bashrc
 ln -s ~/git/Misc/Linux/.bashrc
