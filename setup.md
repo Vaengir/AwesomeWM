@@ -33,8 +33,27 @@ gh repo clone Weiberle17/nvim.conf
 ln -s ~/git/nvim.conf/nvim ~/.config/nvim
 sudo apt install gcc g++
 ## Node Npm setup
-curl -fsSL https://deb.nodesource.com/setup19.x | sudo -E bash -
-sudo apt install nodejs
+curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash - &&\
+sudo apt-get install -y nodejs
+sudo npm install -g neovim
+## Nvim Plugin setup
+### pip3
+sudo apt install python3-pip
+pip install neovim
+### luarocks
+sudo apt install lua5.4 liblua5.4-dev
+wget https://luarocks.org/releases/luarocks-3.9.1.tar.gz
+tar zxpf luarocks-3.9.1.tar.gz
+cd luarocks-3.9.1
+./configure && make && sudo make install
+sudo luarocks install luasocket
+### PHP
+sudo apt install php php-common php-cli php-zip
+### Composer
+wget -O composer-setup.php https://getcomposer.org/installer
+sudo php composer-setup.php --install-dir=/usr/local/bin --filename=composer
+### ripgrep finder
+sudo apt install ripgrep fd-find
 ## Bash setup
 rm ~/.bashrc
 ln -s ~/git/Misc/Linux/.bashrc
