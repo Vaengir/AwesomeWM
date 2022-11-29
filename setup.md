@@ -32,6 +32,9 @@ sudo mv nvim /usr/local/bin
 gh repo clone Weiberle17/nvim.conf
 ln -s ~/git/nvim.conf/nvim ~/.config/nvim
 sudo apt install gcc g++
+## Node Npm setup
+curl -fsSL https://deb.nodesource.com/setup19.x | sudo -E bash -
+sudo apt install nodejs
 ## Bash setup
 rm ~/.bashrc
 ln -s ~/git/Misc/Linux/.bashrc
