@@ -561,5 +561,5 @@ beautiful.useless_gap= 5
 
 -- Autostart
 awful.spawn.with_shell("compton")
-awful.util.spawn_with_shell("xinput set-prop '$(xinput list --name-only | grep -i touch)' 'libinput Tapping Enabled'")
+awful.util.spawn_with_shell('xinput set-prop "$(xinput list --name-only | grep -i touch)" "libinput Tapping Enabled" 1')
 awful.util.spawn_with_shell("g pull ~/git/")
