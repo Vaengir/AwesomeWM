@@ -370,11 +370,11 @@ clientkeys = gears.table.join(
         --     c.minimized = true
         -- end ,
 --        {description = "minimize", group = "client"}),
-   awful.key({ modkey,           }, "n",
-       function (c)
-           c.maximized = not c.maximized
-           c:raise()
-       end ,
+    awful.key({ modkey,           }, "n",
+        function (c)
+            c.maximized = not c.maximized
+            c:raise()
+        end ,
         {description = "(un)maximize", group = "client"}),
     awful.key({ modkey, "Control" }, "m",
         function (c)
@@ -392,7 +392,7 @@ clientkeys = gears.table.join(
 
 -- Bind all key numbers to tags.
 -- Be careful: we use keycodes to make it work on any keyboard layout.
--- This should map on the top row of your keyboard, usually 1 to 9.
+-- This should map on the top row of your keyboard, usually 1 to 9
 for i = 1, 9 do
     globalkeys = gears.table.join(globalkeys,
         -- View tag only.
