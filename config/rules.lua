@@ -31,7 +31,7 @@ awful.rules.rules = {
   },
 
   {
-    rule = { class = "Firefox-esr", },
+    rule = { class = "firefox-esr", },
     properties = { tag = "1", },
   },
 
