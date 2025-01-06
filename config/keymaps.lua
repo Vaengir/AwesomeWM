@@ -13,7 +13,7 @@ local hotkeys_popup = require("awful.hotkeys_popup")
 require("awful.hotkeys_popup.keys")
 
 -- Local Variable
-local terminal = "kitty"
+local terminal = "ghostty"
 local browser = "firefox-esr"
 local fileexp = "pcmanfm"
 

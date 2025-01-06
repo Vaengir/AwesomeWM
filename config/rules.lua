@@ -36,7 +36,7 @@ awful.rules.rules = {
   },
 
   {
-    rule = { class = "kitty", },
+    rule = { class = "com.mitchellh.ghostty", },
     properties = { tag = "2", },
   },
 
@@ -74,16 +74,5 @@ awful.rules.rules = {
     rule_any = { class = { "discord", "Spotify", }, },
     properties = { tag = "9", },
   },
-
-  -- Right opacity for kitty
-  -- not functional
-  -- { rule = {class = "kitty" },
-  --   properties = { opacity = 1 }
-  -- },
-
-  -- Add titlebars to normal clients and dialogs
-  -- { rule_any = {type = { "normal", "dialog" }
-  --   }, properties = { titlebars_enabled = true }
-  -- },
 }
 -- }}}
