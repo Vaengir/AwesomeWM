@@ -14,7 +14,7 @@ require("awful.hotkeys_popup.keys")
 
 -- Local Variable
 local terminal = "ghostty"
-local browser = "firefox-esr"
+local browser = "firefox"
 local fileexp = "pcmanfm"
 
 -- Default modkey.
@@ -93,11 +93,11 @@ globalkeys = gears.table.join(
     { description = "open the browser", group = "launcher", }),
   awful.key({ modkey, }, "e", function() awful.spawn(fileexp) end,
     { description = "open the file explorer", group = "launcher", }),
-  awful.key({ modkey, }, "q", function() awful.util.spawn_with_shell("i3lock-fancy -gp") end,
+  awful.key({ modkey, }, "q", function() awful.util.spawn_with_shell("pkill awesome") end,
     { description = "lock screen", group = "awesome", }),
 
   -- Rofi
-  awful.key({ modkey, }, "r", function() awful.util.spawn_with_shell('rofi -combi-modi drun,run -show combi') end,
+  awful.key({ modkey, }, "r", function() awful.util.spawn_with_shell("rofi -combi-modi drun,run -show combi") end,
     { description = "Run Rofi", group = "launcher", }),
 
   -- Sound and Brightness keybinds
