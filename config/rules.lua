@@ -41,7 +41,7 @@ awful.rules.rules = {
   },
 
   {
-    rule = { class = "Pcmanfm", },
+    rule_any = { class = { "Emacs", "Pcmanfm", }, },
     properties = { tag = "3", },
   },
 
