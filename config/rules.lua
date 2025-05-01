@@ -31,6 +31,11 @@ awful.rules.rules = {
   },
 
   {
+    rule = { class = "Emacs", },
+    properties = { size_hints_honor = false, },
+  },
+
+  {
     rule = { class = "firefox", },
     properties = { tag = "1", },
   },
