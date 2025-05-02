@@ -95,7 +95,7 @@ globalkeys = gears.table.join(
     { description = "open the browser", group = "launcher", }),
   awful.key({ modkey, }, "e", function() awful.spawn(fileexp) end,
     { description = "open the file explorer", group = "launcher", }),
-  awful.key({ modkey, }, "q", function() awful.util.spawn_with_shell("pkill awesome") end,
+  awful.key({ modkey, }, "q", function() awesome.quit() end,
     { description = "lock screen", group = "awesome", }),
 
   -- Rofi
